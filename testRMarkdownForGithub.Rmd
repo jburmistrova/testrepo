@@ -8,20 +8,24 @@ output: github_document
 Insert an empty R chunk, via the “Chunk” menu in upper right of source editor or with corresponding keyboard shortcut.
 
 
+###Question 2
+
 ```{r}
-## insert your brilliant WORKING code here
-findruns <- function(x,k)
-{
-  n <- length(x)
-  runs <- NULL
-  # Notice our loop ends at (n-k)
-  for(i in 1:(n-k+1))
-  {
-    if(all(x[i:(i+k-1)]==1)) runs <- c(runs,i)
-    # Enter the browser on the last iteration:
-    if(i==(n-k)) browser()
-  }
-  return(runs)
-}
-findruns(1,4)
+q <- c(x,x,8)
+mean(x)
+sd(x) 
+print(sd(x))
+y <- mean(x)
+s <- sd(x) 
 ```
+
+Ans: Object s has been defined as standard deviation of x and we check that by printing sd(x) and comparing that to the value to s. 
+
+###Question 3
+
+```{r}
+paste("Remote","Sensing","is","covered","in","awesomesauce!") #Make R write some words
+paste("Julia Burmistrova")
+```
+
+Ans: I made R print my name.
